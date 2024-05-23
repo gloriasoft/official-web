@@ -37,8 +37,8 @@ export default function App() {
                 基于行业属性与业务需求，围绕用户体验的提升与数字化连接的建立，打造一站式解决方案<br /> 如电商、数字营销、效果优化、企业站点、微信生态的应用、数据可视化等方案和系统的落地
               </p>
               <div className="text-center flex items-center justify-center mt-[72px]">
-                {/* <Button 
-                  radius="full" 
+                {/* <Button
+                  radius="full"
                   size="lg"
                   className="mt-8 w-[240px] bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">立即咨询</Button> */}
                 <div className="btn-contact">
@@ -52,7 +52,7 @@ export default function App() {
             <div className="hidden sm:w-[40%] sm:block relative mt-6" id="parallax1">
               <img src="/images/IntroSection.png" alt="" className=" w-full h-full object-contain aspect-auto" />
             </div>
-            
+
           </div>
         </section>
 
@@ -71,8 +71,8 @@ export default function App() {
                   </div>
                 </div>
                 <p className="mt-2 text-gray-700">快速构建全渠道商城，实现多平台开店</p>
-                
-                <Slider 
+
+                <Slider
                   className=""
                   {...sliderSetting}>
                   <div className="pb-2 text-center">
@@ -101,13 +101,22 @@ export default function App() {
                   </div>
                 </Slider>
 
-                
+
               </div>
               <div className="gradient-border flex-1 min-h-[480px] min-w-[360px] bg-white/75 p-8 rounded-md mt-4 sm:mt-0 sm:ml-4">
-                <h2 className="text-[40px] font-bold">全场景软件服务</h2>
-                <p className="mt-2 text-gray-700"></p>
+                <h2 className="text-[40px] font-bold">为企业定制的数字化方案</h2>
+                <p className="mt-2 text-gray-700">C端引流（多渠道推广和营销方案）</p>
+                <p className="mt-2 text-gray-700">效果跟踪和优化（各环节的埋点布署方案、以及优化方案）</p>
+                <p className="mt-2">线索转化（官网、mini site、landing page）
+                </p>
                 <p className="mt-2">
-                  
+                  订单状态的管理和推进（C端系统和企业内部系统的打通）
+                </p>
+                <p className="mt-2">
+                  内部提效（企业内部数字化系统的搭建和布署）
+                </p>
+                <p className="mt-2">
+                  商业分析（BI、数据可视化方案）
                 </p>
               </div>
             </div>
@@ -120,7 +129,7 @@ export default function App() {
         <section className="mt-[120px] md:mt-[240px]">
           <div className="relative px-4 md:p-0">
             <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-40px] sm:top-[-80px] md:top-[-100px] lg:top-[-140px] xl:top-[-180px] z-10" src="/images/evolution.png" alt="" />
-            
+
             <div className="convey border-3 border-white rounded-sm p-4 sm:px-4 md:px-8 lg:px-12 md:py-12 pt-[80px] md:pt-[140px] lg:pt-[180px] xl:pt-[240px]">
               <div className="flex flex-wrap">
                 <div className="flex-1 min-w-[300px]">
@@ -137,7 +146,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          
+
         </section>
 
         <div id="trigger2" className="min-h-0  h-[1px]"></div>
@@ -150,7 +159,7 @@ export default function App() {
               <h1 className="text-[42px] font-bold text-right">巫君平</h1>
               <h1 className="text-[36px] font-bold text-right">联合创始人 & CEO</h1>
               <p className="text-right">
-               
+
               </p>
             </div>
             <div className="flex-1 ml-8">
@@ -158,7 +167,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        
+
         <div id="trigger3" className="min-h-0  h-[1px]"></div>
         <section className="rounded-sm p-10 md:p-[40px] mt-[120px] bg-gradient-to-br from-green-500/10 to-yellow-500/10">
           <div className="flex">
@@ -170,7 +179,7 @@ export default function App() {
             </div>
           </div>
         </section>
-      
+
         <section>
           <div id="trigger4" className="min-h-0  h-[1px]"></div>
 
@@ -186,10 +195,10 @@ export default function App() {
 
           </div>
         </section>
-       
+
       </div>
 
-      <footer className=""> 
+      <footer className="">
         <div className="container mx-auto text-gray-700 py-8 px-16">
           <div className="flex flex-col items-start  space-y-2 text-sm h-[24px]">
             <p>邮箱：</p>

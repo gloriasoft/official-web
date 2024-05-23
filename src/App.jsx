@@ -31,9 +31,9 @@ export default function App() {
       <div className="container mx-auto py-4">
         <section className="section-main">
           <div className="flex flex-wrap">
-            <div className="flex-1 py-8 md:max-2xl:pr-[80px]">
+            <div className="flex-1 py-8 md:pr-[80px]">
               <h1 className="text-[48px] lg:text-[72px] md:text-[60px]  font-bold text-center mt-[180px]">企业数字化<br/>一站式解决方案</h1>
-              <p className="p-4 md:max-2xl:text-xl md:max-2xl:p-0 mt-4 text-gray-700 text-center leading-8">
+              <p className="p-4 md:text-xl md:p-0 mt-4 text-gray-700 text-center leading-8">
                 基于行业属性与业务需求，围绕用户体验的提升与数字化连接的建立，打造一站式解决方案<br /> 如电商、数字营销、效果优化、企业站点、微信生态的应用、数据可视化等方案和系统的落地
               </p>
               <div className="text-center flex items-center justify-center mt-[72px]">
@@ -118,7 +118,7 @@ export default function App() {
         </section>
 
         <section className="mt-[120px] md:mt-[240px]">
-          <div className="relative px-4 md:max-2xl:p-0">
+          <div className="relative px-4 md:p-0">
             <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-40px] sm:top-[-80px] md:top-[-100px] lg:top-[-140px] xl:top-[-180px] z-10" src="/images/evolution.png" alt="" />
             
             <div className="convey border-3 border-white rounded-sm p-4 sm:px-4 md:px-8 lg:px-12 md:py-12 pt-[80px] md:pt-[140px] lg:pt-[180px] xl:pt-[240px]">
@@ -127,12 +127,12 @@ export default function App() {
                   <h1 className="text-[32px] md:text-[48px]  text-[#4e60b1] text-center md:text-right">选择适合您的交付模式</h1>
                 </div>
                 <div className="flex-1 md:ml-12 min-w-[300px]">
-                  <p className="text-[20px] md:max-2xl:text-[28px] "><q >轻交付</q></p>
-                  <p className="text-[16px] md:max-2xl:text-[16px] text-gray-700 md:max-2xl:ml-8">基于实际业务为您挑选性价比最高的SaaS组合产品，快速搭建企业数字化体系</p>
+                  <p className="text-[20px] md:text-[28px] "><q >轻交付</q></p>
+                  <p className="text-[16px] md:text-[16px] text-gray-700 md:ml-8">基于实际业务为您挑选性价比最高的SaaS组合产品，快速搭建企业数字化体系</p>
 
                   <hr className="my-8 border-white/75 border-dotted" />
-                  <p className="text-[20px] md:max-2xl:text-[28px]"><q >个性定制</q></p>
-                  <p className="text-[16px] md:max-2xl:text-[16px] text-gray-700 md:max-2xl:ml-8">打造独一无二的专属应用</p>
+                  <p className="text-[20px] md:text-[28px]"><q >个性定制</q></p>
+                  <p className="text-[16px] md:text-[16px] text-gray-700 md:ml-8">打造独一无二的专属应用</p>
                 </div>
               </div>
             </div>

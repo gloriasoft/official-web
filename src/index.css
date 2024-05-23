@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: "Siyuan";
+   src: url("/fonts/SiyuanHelCNRegular.ttf");
+}
+
+:root {
+   background-color: rgb(214, 224, 236);
+}
+
+html,body {
+   font-family: Siyuan;
+   
+   background-image: linear-gradient(180deg,#d6e2ed 0,#dfe0f2 33%,#d6e2ed 66%,#d6e2ed 100%);
+   background-repeat: no-repeat;
+   height: 100vh;
+   -webkit-font-smoothing: antialiased;
+}
+
+/* #reveal1,#reveal2,#reveal3,#reveal4,#reveal5 {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+#reveal1.visible,#reveal2.visible,#reveal3.visible,#reveal4.visible,#reveal5.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+} */
+
+
+.btn-contact {
+   position: relative;
+   display: block;
+   width: 100%;
+   max-width: 360px;
+   height: 72px;
+   background-color: #fff;
+   /* transform: translateX(-8px) translateY(-8px); */
+   transition-duration: .1s;
+   transition-property: transform;
+   font-size: 20px;
+   line-height: 72px;
+   text-align: center;
+   border-radius: 4px;
+   overflow: visible;
+   z-index: 2;
+   cursor: pointer;
+}
+
+.btn-contact:hover {
+   /* transform: translateX(8px) translateY(8px); */
+}
+
+.btn-contact::after {
+   content: '';
+   display: block;
+   border: 2px solid white;
+   border-radius: 4px;
+   transform: translateX(8px) translateY(8px);
+   height: 72px;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 360px;
+
+}
+
+.gradient-border {
+   position: relative;
+   backdrop-filter: blur(12px);
+   border-width: 1px;
+   overflow: hidden;
+}
+
+.gradient-border:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 2px;
+   width: 100%;
+   background-position: 0 0;
+   opacity: 0.1;
+   transition: background-size .3s ease-in-out, opacity .2s ease-in-out;
+   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+   -webkit-mask-composite: xor;
+   mask-composite: exclude;
+   z-index: -1;
+   background: conic-gradient(yellow 0, red 25%, yellow 50%,  green 75%, yellow 100%);
+   background-size: 100% auto;
+}
+.gradient-border:hover:before {
+   opacity: 1;
+   /* background-position: -50% -50%; */
+   background-size: 100%;
+}
+
+
+.convey::before {
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 70%;
+   top: 0;
+   left: 15%;
+   background: rgb(214, 224, 236);
+   z-index: 1;
+}

@@ -1,0 +1,36 @@
+.header {
+  height: 72px;
+  transition: all .3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+.header * {
+  transition:  .3s ease-in-out;
+  transition-property: font-size;
+}
+.header .firm-name {
+  font-size: 18px;
+}
+.header .logo {
+  width: 32px;
+  height: 32px;
+}
+.header .nav-items {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.header .nav-items > a {
+  box-sizing: border-box;
+  padding: 2px 0;
+  width: 80px;
+}
+.header-scrolled {
+  height: 48px;
+  background-color: white;
+}
+
+.header-scrolled .nav-items {
+  font-size: 16px;
+}

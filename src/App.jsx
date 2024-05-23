@@ -175,7 +175,38 @@ export default function App() {
               <img className="hidden md:block img-achivement object-contain" src="/images/achivements.png" alt="" />
             </div>
             <div className="flex-1">
-              <h1 className="text-lg md:text-[48px] text-center">技术成就</h1>
+              <h1 className="text-[48px] font-bold text-center">技术成就</h1>
+              <div className="flex">
+                <img className="hidden md:block img-achivement object-contain" src="/images/vuereact-combined.png" alt="" width="100" />
+                <div className="flex-1">
+                  <h1 className="text-[36px] font-bold text-right">Veaury</h1>
+                  <p className="text-left">
+                    Veaury 是基于React和Vue3的工具库，主要用于React和Vue在一个项目中公共使用的场景，主要运用在项目迁移、技术栈融合的开发模式、跨技术栈使用第三方组件的场景。
+                    https://github.com/gloriasoft/veaury
+                  </p>
+                </div>
+              </div>
+              <div className="flex">
+                <img className="hidden md:block img-achivement object-contain" src="/images/uniapp-plugin.png" alt="" width="100" />
+                <div className="flex-1">
+                  <h1 className="text-[36px] font-bold text-right">Uniapp的相关插件贡献</h1>
+                  <p className="text-left">
+                    我们对Uniapp生态提供了相关的插件贡献
+                  </p>
+                  <p className="text-left">
+                    uniapp2wxpack：唯一被Uniapp官网收录的三方插件，解决uni-app和原生小程序混合开发问题。
+                    https://github.com/gloriasoft/uniapp2wxpack
+                  </p>
+                  <p className="text-left">
+                    uni-crazy-router：一个更贴合uni-app的router插件，一切都使用uni-app原生钩子实现和方法实现，抛弃了vue-router的影子。
+                    https://github.com/gloriasoft/uni-crazy-router
+                  </p>
+                  <p className="text-left">
+                    uni-pages-hot-modules ：uni-app的pages.json模块化依赖及模块化热重载方案
+                    https://github.com/gloriasoft/uni-pages-hot-modules
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

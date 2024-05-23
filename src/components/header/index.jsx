@@ -40,16 +40,19 @@ export default function Header() {
         <div className="flex-1">
           <p className="firm-title">
             <img src="/images/gloria-logo.svg" alt="" className="logo inline-block" />
-            <span className="pl-2 firm-name">嘉兰荣光 Gloriasoft</span>
+            <span className="pl-2 firm-name text-sm">嘉兰荣光 Gloriasoft</span>
           </p>
         </div>
-        <div className="px-4">
+        <div className="px-4 hidden sm:block">
           <nav className="flex items-center nav-items">
-            <a className="mx-4 text-center" href="">公司简介</a>
-            <a className="mx-4 text-center" href="">公司理念</a>
-            <a className="mx-4 text-center" href="">团队介绍</a>
-            <a className="mx-4 text-center border-b-2 border-black" href="">联系我们</a>
+            <a className="mx-2 sm:mx-4 text-center" href="">公司简介</a>
+            <a className="mx-2 sm:mx-4 text-center" href="">公司理念</a>
+            <a className="mx-2 sm:mx-4 text-center" href="">团队介绍</a>
+            <a className="mx-2 sm:mx-4 text-center border-b-2 border-black" href="">联系我们</a>
           </nav>
+        </div>
+        <div className="sm:hidden">
+          菜单
         </div>
       </div>
       

@@ -11,7 +11,7 @@
   transition-property: font-size;
 }
 .header .firm-name {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 .header .logo {
   width: 32px;
@@ -24,7 +24,7 @@
 .header .nav-items > a {
   box-sizing: border-box;
   padding: 2px 0;
-  width: 80px;
+  /* width: 80px; */
 }
 .header-scrolled {
   height: 48px;

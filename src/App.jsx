@@ -30,10 +30,10 @@ export default function App() {
       <Header></Header>
       <div className="container mx-auto py-4">
         <section className="section-main">
-          <div className="flex">
-            <div className="flex-1 py-8 pr-[80px]">
-              <h1 className="text-[72px] font-bold text-center mt-[180px]">企业数字化<br/>一站式解决方案</h1>
-              <p className="text-xl mt-4 text-gray-700 text-center leading-8">
+          <div className="flex flex-wrap">
+            <div className="flex-1 py-8 md:max-2xl:pr-[80px]">
+              <h1 className="text-[48px] lg:text-[72px] md:text-[60px]  font-bold text-center mt-[180px]">企业数字化<br/>一站式解决方案</h1>
+              <p className="p-4 md:max-2xl:text-xl md:max-2xl:p-0 mt-4 text-gray-700 text-center leading-8">
                 基于行业属性与业务需求，围绕用户体验的提升与数字化连接的建立，打造一站式解决方案<br /> 如电商、数字营销、效果优化、企业站点、微信生态的应用、数据可视化等方案和系统的落地
               </p>
               <div className="text-center flex items-center justify-center mt-[72px]">
@@ -44,13 +44,13 @@ export default function App() {
                 <div className="btn-contact">
                   <div className="text-center relative">
                     <span className="">立即咨询</span>
-                    <img className="absolute right-[-40px] top-[30px] z-10" src="/images/btn-contact-arrow.svg" alt="" />
+                    <img className="hidden sm:block absolute right-[-40px] top-[30px] z-10" src="/images/btn-contact-arrow.svg" alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-[40%] relative mt-6" id="parallax1">
-              <img src="/images/IntroSection.png" alt="" className="w-full h-full object-contain aspect-auto" />
+            <div className="hidden sm:w-[40%] sm:block relative mt-6" id="parallax1">
+              <img src="/images/IntroSection.png" alt="" className=" w-full h-full object-contain aspect-auto" />
             </div>
             
           </div>
@@ -58,12 +58,11 @@ export default function App() {
 
         <section className="mt-4">
 
-          {/* <h1 className="text-[48px] font-bold text-center">章节2-描述公司优势</h1> */}
           <div id="trigger1" className="min-h-0 h-[1px]"></div>
           <div className=" mx-auto mt-2" id="reveal1">
 
-            <div className="flex items-stretch">
-              <div className="gradient-border flex-1 min-h-[480px] bg-white/75 p-8 rounded-md">
+            <div className="flex items-stretch flex-wrap px-5">
+              <div className="gradient-border flex-1 min-h-[480px] min-w-[360px] bg-white/75 p-8 rounded-md">
                 <div className="flex">
                   <h2 className="text-[40px] font-bold flex-1">全渠道商城</h2>
                   <div className="flex items-center">
@@ -104,7 +103,7 @@ export default function App() {
 
                 
               </div>
-              <div className="gradient-border flex-1 min-h-[480px] bg-white/75 ml-4 p-8 rounded-md">
+              <div className="gradient-border flex-1 min-h-[480px] min-w-[360px] bg-white/75 p-8 rounded-md mt-4 sm:mt-0 sm:ml-4">
                 <h2 className="text-[40px] font-bold">全场景软件服务</h2>
                 <p className="mt-2 text-gray-700"></p>
                 <p className="mt-2">
@@ -118,24 +117,22 @@ export default function App() {
 
         </section>
 
-        <section className="mt-[240px]">
-          <div className="relative">
+        <section className="mt-[120px] md:mt-[240px]">
+          <div className="relative px-4 md:max-2xl:p-0">
+            <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-40px] sm:top-[-80px] md:top-[-100px] lg:top-[-140px] xl:top-[-180px] z-10" src="/images/evolution.png" alt="" />
             
-            <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-180px] z-10" src="/images/evolution.png" alt="" />
-            
-            <div className="convey border-3 border-white rounded-sm px-16 py-12 pt-[220px]">
-              <div className="flex">
-                <div className="flex-1">
-                  <h1 className="text-[48px]  text-[#4e60b1] text-right">选择适合您的交付模式</h1>
+            <div className="convey border-3 border-white rounded-sm p-4 sm:px-4 md:px-8 lg:px-12 md:py-12 pt-[80px] md:pt-[140px] lg:pt-[180px] xl:pt-[240px]">
+              <div className="flex flex-wrap">
+                <div className="flex-1 min-w-[300px]">
+                  <h1 className="text-[32px] md:text-[48px]  text-[#4e60b1] text-center md:text-right">选择适合您的交付模式</h1>
                 </div>
-                <div className="flex-1 ml-12">
-                  <p className="text-[28px] "><q >轻交付</q></p>
-                  <p className="text-[16px] text-gray-700 ml-8">基于实际业务为您挑选性价比最高的SaaS组合产品，快速搭建企业数字化体系</p>
+                <div className="flex-1 md:ml-12 min-w-[300px]">
+                  <p className="text-[20px] md:max-2xl:text-[28px] "><q >轻交付</q></p>
+                  <p className="text-[16px] md:max-2xl:text-[16px] text-gray-700 md:max-2xl:ml-8">基于实际业务为您挑选性价比最高的SaaS组合产品，快速搭建企业数字化体系</p>
 
                   <hr className="my-8 border-white/75 border-dotted" />
-
-                  <p className="text-[28px]"><q >个性定制</q></p>
-                  <p className="text-[16px] text-gray-700 ml-8">打造独一无二的专属应用</p>
+                  <p className="text-[20px] md:max-2xl:text-[28px]"><q >个性定制</q></p>
+                  <p className="text-[16px] md:max-2xl:text-[16px] text-gray-700 md:max-2xl:ml-8">打造独一无二的专属应用</p>
                 </div>
               </div>
             </div>
@@ -163,13 +160,13 @@ export default function App() {
         </section>
         
         <div id="trigger3" className="min-h-0  h-[1px]"></div>
-        <section className="rounded-sm p-[40px] mt-[120px] bg-gradient-to-br from-green-500/10 to-yellow-500/10">
+        <section className="rounded-sm p-10 md:p-[40px] mt-[120px] bg-gradient-to-br from-green-500/10 to-yellow-500/10">
           <div className="flex">
-            <div className="relative w-[300px]">
-              <img className="img-achivement object-contain" src="/images/achivements.png" alt="" />
+            <div className="relative m-w-[300px]">
+              <img className="hidden md:block img-achivement object-contain" src="/images/achivements.png" alt="" />
             </div>
             <div className="flex-1">
-              <h1 className="text-[48px] text-center">技术成就</h1>
+              <h1 className="text-lg md:text-[48px] text-center">技术成就</h1>
             </div>
           </div>
         </section>
@@ -192,11 +189,10 @@ export default function App() {
        
       </div>
 
-      <footer className="h-[200px] bg-black"> 
-        <div className="container mx-auto text-gray-50 py-8">
-          <div className="flex items-center  space-x-2 text-sm h-[24px]">
+      <footer className=""> 
+        <div className="container mx-auto text-gray-700 py-8 px-16">
+          <div className="flex flex-col items-start  space-y-2 text-sm h-[24px]">
             <p>邮箱：</p>
-            <Divider orientation="vertical" />
             <p>公司地址：</p>
           </div>
         </div>

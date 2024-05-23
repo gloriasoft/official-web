@@ -44,13 +44,13 @@ export default function App() {
                 <div className="btn-contact">
                   <div className="text-center relative">
                     <span className="">立即咨询</span>
-                    <img className="absolute right-[-40px] top-[30px] z-10" src="/gloria/images/btn-contact-arrow.svg" alt="" />
+                    <img className="absolute right-[-40px] top-[30px] z-10" src="/images/btn-contact-arrow.svg" alt="" />
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-[40%] relative mt-6" id="parallax1">
-              <img src="/gloria/images/IntroSection.png" alt="" className="w-full h-full object-contain aspect-auto" />
+              <img src="/images/IntroSection.png" alt="" className="w-full h-full object-contain aspect-auto" />
             </div>
             
           </div>
@@ -121,7 +121,7 @@ export default function App() {
         <section className="mt-[240px]">
           <div className="relative">
             
-            <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-180px] z-10" src="/gloria/images/evolution.png" alt="" />
+            <img className="absolute w-[60%] left-0 right-0 mx-auto top-[-180px] z-10" src="/images/evolution.png" alt="" />
             
             <div className="convey border-3 border-white rounded-sm px-16 py-12 pt-[220px]">
               <div className="flex">
@@ -166,7 +166,7 @@ export default function App() {
         <section className="rounded-sm p-[40px] mt-[120px] bg-gradient-to-br from-green-500/10 to-yellow-500/10">
           <div className="flex">
             <div className="relative w-[300px]">
-              <img className="img-achivement object-contain" src="/gloria/images/achivements.png" alt="" />
+              <img className="img-achivement object-contain" src="/images/achivements.png" alt="" />
             </div>
             <div className="flex-1">
               <h1 className="text-[48px] text-center">技术成就</h1>

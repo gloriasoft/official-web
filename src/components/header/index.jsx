@@ -39,7 +39,7 @@ export default function Header() {
       <div className="container mx-auto flex h-full items-center relative">
         <div className="flex-1">
           <p className="firm-title">
-            <img src="/gloria/images/gloria-logo.svg" alt="" className="logo inline-block" />
+            <img src="/images/gloria-logo.svg" alt="" className="logo inline-block" />
             <span className="pl-2 firm-name">嘉兰荣光 Gloriasoft</span>
           </p>
         </div>

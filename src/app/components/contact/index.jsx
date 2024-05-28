@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react'
 import IconContact from '@/app/icons/contact'
 import { Tabs, Tab, Tooltip, Popover, PopoverTrigger, PopoverContent, Input, Button } from "@nextui-org/react";
@@ -18,7 +18,15 @@ function ContactTrigger() {
   }
 
   function handleSubmit() {
-    
+    if (window._hmt) {
+      window._hmt.push([
+        '_trackEvent',
+        'contact',
+        'submit',
+        '-',
+        [name, phone, desc].join('_')
+      ])
+    }
   }
 
   React.useEffect(() => {
@@ -66,6 +74,7 @@ function ContactTrigger() {
                   value={desc} 
                   onValueChange={setDesc}></Input>
                 <Button
+                  type='submit'
                   onClick={handleSubmit}
                   className='bg-gradient-to-br from-red-500 to-yellow-500 text-white' 
                   radius='sm'>确认</Button>
@@ -88,8 +97,11 @@ function ContactTrigger() {
 
 
 export default function Contact() {
-  "use client"
-  return createPortal(<ContactTrigger />, typeof document === 'undefined' ? null : window.document.body)
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => setMounted(true), []);
+
+  return mounted ? createPortal(<ContactTrigger />, typeof document === 'undefined' ? null : window.document.body) : null
 } 
 
 

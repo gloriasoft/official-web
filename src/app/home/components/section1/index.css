@@ -1,0 +1,21 @@
+.channel-list {
+
+}
+
+.channel-list > div {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.channel-list > div  img {
+  object-fit: cover;
+  max-width: 48px;
+  max-height: 48px;
+}

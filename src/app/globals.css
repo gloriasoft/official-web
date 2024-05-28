@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-main-color: rgb(214, 224, 236);
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +18,97 @@
   }
 }
 
+@font-face {
+  font-family: "Siyuan";
+  src: url("/fonts/SiyuanHelCNRegular.ttf") format("ttf");
+}
+
 body {
+  font-family: Siyuan;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-main-color);
+  background-image: linear-gradient(180deg,#d6e2ed 0,#dfe0f2 33%,#d6e2ed 66%,#d6e2ed 100%);
+  -webkit-font-smoothing: antialiased;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+
+.btn-contact {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 16px;
+  /* height: 72px; */
+  background-color: #fff;
+  /* transform: translateX(-8px) translateY(-8px); */
+  transition-duration: .1s;
+  transition-property: transform;
+  /* font-size: 20px; */
+  /* line-height: 72px; */
+  text-align: center;
+  border-radius: 4px;
+  overflow: visible;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.btn-contact:hover {
+  /* transform: translateX(8px) translateY(8px); */
+}
+
+.btn-contact::after {
+  content: '';
+  display: block;
+  border: 2px solid white;
+  border-radius: 4px;
+  transform: translateX(8px) translateY(8px);
+  /* height: 72px; */
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+
+}
+
+.gradient-border {
+  position: relative;
+  backdrop-filter: blur(12px);
+  border-width: 1px;
+  overflow: hidden;
+}
+
+.gradient-border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  width: 100%;
+  background-position: 0 0;
+  opacity: 0.1;
+  transition: background-size .3s ease-in-out, opacity .2s ease-in-out;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  background: conic-gradient(yellow 0, red 25%, yellow 50%,  green 75%, yellow 100%);
+  background-size: 100% auto;
+}
+.gradient-border:hover:before {
+  opacity: 1;
+  /* background-position: -50% -50%; */
+  background-size: 100%;
 }

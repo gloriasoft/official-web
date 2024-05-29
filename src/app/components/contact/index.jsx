@@ -9,29 +9,33 @@ function ContactTrigger() {
   const [isOpen, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [company, setCompany] = useState('')
+
   const [desc, setDesc] = useState('')
 
 
   function handleChange(state) {
-    console.log(state)
+    // console.log(state)
     document.body.style = state ? 'overflow: hidden;' : 'overflow: auto;'
   }
 
   function handleSubmit() {
+    if (name.trim() === '' || phone.trim() === '') {
+      return
+    }
     if (window._hmt) {
       window._hmt.push([
         '_trackEvent',
         'contact',
         'submit',
         '-',
-        [name, phone, desc].join('_')
+        [name, phone, company, desc].join('_')
       ])
+      console.log('send success', [name, phone, company, desc].join('_'))
     }
   }
 
-  React.useEffect(() => {
-    setOpen(true)
-  }, [])
+  
 
   return (
     <Popover onOpenChange={handleChange} backdrop="opaque">
@@ -52,7 +56,7 @@ function ContactTrigger() {
         >
           <Tab key="form" title="联系方式" className='w-full '>
             <div className=''>
-              <form className="flex flex-col gap-4">
+              <form action='#' className="flex flex-col gap-4">
                 <Input 
                   isRequired 
                   label="您的称呼" 
@@ -67,6 +71,12 @@ function ContactTrigger() {
                   radius='sm' 
                   value={phone} 
                   onValueChange={setPhone}></Input>
+                <Input 
+                  label="公司名称" 
+                  placeholder="您的公司或组织名称" 
+                  radius='sm' 
+                  value={company} 
+                  onValueChange={setCompany}></Input>
                 <Input 
                   label="咨询意向" 
                   placeholder="您想了解哪方面的产品或服务" 

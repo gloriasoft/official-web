@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next'
 
 export default function SectionTwo() {
   return (
@@ -9,15 +9,19 @@ export default function SectionTwo() {
 
         <div className="border-3 border-white rounded-sm relative">
           <div className="absolute left-8 px-4 mx-auto top-[-16px] md:top-[-24px] bg-[var(--background-main-color)]">
-            <h1 className="leading-none text-[32px] md:text-[48px]  text-[#4e60b1] text-center">选择适合您的交付模式</h1>
+            <h1 className="leading-none text-[32px] md:text-[48px]  text-[#4e60b1] text-center">企业系统代运营</h1>
           </div>
           <div className="p-8 lg:p-12">
-            <p className="text-[20px] md:text-[28px] "><q >轻交付</q></p>
-            <p className="text-[16px] md:text-[16px] text-gray-700 lg:ml-8">基于实际业务为您挑选性价比最高的SaaS组合产品，快速搭建企业数字化体系</p>
-
+            <p className="text-[20px] md:text-[28px] ">
+              <q></q>
+            </p>
+            <p className="text-[16px] md:text-[16px] text-gray-700 "></p>
             <hr className="my-8 border-white/75 border-dotted" />
-            <p className="text-[20px] md:text-[28px]"><q >个性定制</q></p>
-            <p className="text-[16px] md:text-[16px] text-gray-700 lg:ml-8">打造独一无二的专属应用</p>
+            <p className="text-[20px] md:text-[28px]">
+              <q>私域运营</q>
+            </p>
+            <p className="text-[16px] md:text-[16px] text-gray-700"></p>
+            
           </div>
         </div>
     

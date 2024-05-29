@@ -20,48 +20,48 @@ export default function SectionFour() {
         </div> */}
         <Card className="flex-1 m-w-[320px]" radius="sm">
           <CardBody>
-            <Link href="https://github.com/gloriasoft/veaury">
+            <Link href="https://github.com/gloriasoft/veaury" target="_blank">
               <Image className="mx-auto" src="/images/vuereact-combined.png" alt="" width="56" height="56" />
             </Link>
             <h1 className="text-2xl font-bold ml-2 text-center">
-              <Link href="https://github.com/gloriasoft/veaury">Veaury</Link>
-              <Link href="https://github.com/gloriasoft/veaury">
+              <Link href="https://github.com/gloriasoft/veaury" target="_blank">Veaury</Link>
+              <Link href="https://github.com/gloriasoft/veaury" target="_blank">
                 <img className="ml-2 w-[100px] inline-block" src="https://img.shields.io/github/stars/gloriasoft/veaury" alt="veaury-stars"></img>
               </Link>
             </h1>
             <p className="leading-6 p-4">
-              Veaury 是基于React和Vue3的工具库，主要用于React和Vue在一个项目中公共使用的场景，主要运用在项目迁移、技术栈融合的开发模式、跨技术栈使用第三方组件的场景。
+              Veaury是一个帮助开发者在项目中同时使用Vue3和React的工具库，主要运用在项目迁移、技术栈融合的开发模式、跨技术栈使用第三方组件的场景。
             </p>
           </CardBody>
         </Card>
 
         <Card className="flex-1" radius="sm">
           <CardBody>
-            <Link href="https://github.com/gloriasoft/uniapp2wxpack">
+            <Link href="https://github.com/gloriasoft/uniapp2wxpack" target="_blank">
               <Image className="mx-auto my-[9px]" src="/images/uniapp-plugin.png" alt="" width="48" height="48" />
             </Link>
             <h1 className="text-2xl font-bold ml-2 text-center">
-              <Link href="https://github.com/gloriasoft/uniapp2wxpack">
+              <Link href="https://github.com/gloriasoft/uniapp2wxpack" target="_blank">
                 uniapp2wxpack
               </Link>
-              <Link href="https://github.com/gloriasoft/uniapp2wxpack">
+              <Link href="https://github.com/gloriasoft/uniapp2wxpack" target="_blank">
                 <img className="ml-2 w-[100px] inline-block" src="https://img.shields.io/github/stars/gloriasoft/uniapp2wxpack" alt="uniapp2wxpack-stars"></img>
               </Link>
             </h1>
-            <p className="leading-6 p-4">唯一被UniApp官网收录的三方插件，解决uni-app和原生小程序混合开发问题。</p>
+            <p className="leading-6 p-4">uniapp2wxpack是唯一被UniApp官网收录的三方插件，解决UniApp和原生小程序混合开发问题。</p>
           </CardBody>
         </Card>
 
         <Card className="flex-1" radius="sm">
           <CardBody>
-            <Link href="https://github.com/gloriasoft/uni-crazy-router">
+            <Link href="https://github.com/gloriasoft/uni-crazy-router" target="_blank">
               <Image className="mx-auto my-[9px]" src="/images/uniapp-plugin.png" alt="" width="48" height="48" />
             </Link>
             <h1 className="text-2xl font-bold ml-2 text-center">
-              <Link href="https://github.com/gloriasoft/uni-crazy-router">
+              <Link href="https://github.com/gloriasoft/uni-crazy-router" target="_blank">
                 <span className="font-bold">uni-crazy-router</span>
               </Link>
-              <Link href="https://github.com/gloriasoft/uni-crazy-router">
+              <Link href="https://github.com/gloriasoft/uni-crazy-router" target="_blank">
                 <img className="ml-2 w-[100px] inline-block" src="https://img.shields.io/github/stars/gloriasoft/uni-crazy-router" alt="uni-crazy-router-stars"></img>
               </Link>
             </h1>
@@ -71,14 +71,14 @@ export default function SectionFour() {
 
         <Card className="flex-1" radius="sm">
           <CardBody>
-            <Link href="https://github.com/gloriasoft/uni-pages-hot-modules">
+            <Link href="https://github.com/gloriasoft/uni-pages-hot-modules" target="_blank">
               <Image className="mx-auto my-[9px]" src="/images/uniapp-plugin.png" alt="" width="48" height="48" />
             </Link>
             <h1 className="text-2xl font-bold ml-2 text-center">
-              <Link href="https://github.com/gloriasoft/uni-pages-hot-modules">
+              <Link href="https://github.com/gloriasoft/uni-pages-hot-modules" target="_blank">
                 <span className="font-bold">uni-pages-hot-modules</span>
               </Link>
-              <Link href="https://github.com/gloriasoft/uni-pages-hot-modules">
+              <Link href="https://github.com/gloriasoft/uni-pages-hot-modules" target="_blank">
                 <img className="ml-2 w-[100px] inline-block" src="https://img.shields.io/github/stars/gloriasoft/uni-pages-hot-modules" alt="uni-pages-hot-modules-stars"></img>
               </Link>
             </h1>

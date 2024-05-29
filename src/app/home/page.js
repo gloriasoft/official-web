@@ -1,11 +1,11 @@
 
 import { createPortal } from 'react-dom'
 import Image from "next/image";
-import Header from "./components/header";
+import Header from "../components/header";
+import Footer from '../components/footer';
 import SectionOne from "./components/section1";
 import SectionTwo from "./components/section2";
 import SectionThree from "./components/section3";
-import SectionFour from "./components/section4";
 import ContactTrigger from '@/app/components/contact'
 
 export default function Home() {
@@ -38,16 +38,13 @@ export default function Home() {
             <div className="hidden md:w-[40%] md:block relative mt-6" id="parallax1">
               <img src="/images/IntroSection.png" alt="" className="w-full h-full object-contain aspect-auto" />
             </div>
-
           </div>
         </section>
         <SectionOne></SectionOne>
-        <SectionTwo></SectionTwo>
-        <SectionThree></SectionThree>
-        <SectionFour></SectionFour>
-
+        {/* <SectionTwo></SectionTwo> */}
+        {/* <SectionThree></SectionThree> */}
       </div>
-
+      <Footer></Footer>
     </main>
   )
 }

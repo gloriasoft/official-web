@@ -57,7 +57,7 @@ export default function SectionOne() {
 
       <div className=" mx-auto mt-2" id="reveal1">
 
-        <div className="flex items-stretch flex-wrap px-5">
+        <div className="flex items-stretch flex-wrap">
           <div className="gradient-border flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] bg-white/75 px-4 py-8 md:px-8 rounded-md">
             <div className="flex">
               <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-bold flex-1">全渠道商城</h2>
@@ -160,11 +160,11 @@ export default function SectionOne() {
                           
                         </div>
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
                   <Tab key="2" title="效果跟踪和优化">
@@ -189,11 +189,11 @@ export default function SectionOne() {
                         </div>
                       
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
 
@@ -219,11 +219,11 @@ export default function SectionOne() {
                           <div className="text-gray-500">如在线聊天、互动表单等，增加用户参与度。</div>
                         </div>
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
                   <Tab key="4" title="系统集成">
@@ -247,11 +247,11 @@ export default function SectionOne() {
                           <div className="text-gray-500">实现企业面向用户的系统与内部各业务系统的数据同步和整合，确保数据的一致性和准确性</div>
                         </div>
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
                   <Tab key="5" title="内部提效">
@@ -275,11 +275,11 @@ export default function SectionOne() {
                           <div className="text-gray-500">文档存储、共享、版本控制等功能。</div>
                         </div>
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                    
                   </Tab>
@@ -304,11 +304,11 @@ export default function SectionOne() {
                           <div className="text-gray-500">实时更新的仪表盘，展示关键业务指标和趋势。</div>
                         </div>
                       </div>                      
-                      <div className="text-center py-2">
+                      {/* <div className="text-center py-2">
                         <Button size="lg" radius="sm" variant="solid" className="bg-gradient-to-br from-red-500 to-yellow-500 text-white">
                           了解更多
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
                 </Tabs>

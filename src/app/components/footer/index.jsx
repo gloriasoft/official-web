@@ -24,7 +24,7 @@ export default function Footer() {
           
           </div>
         </div>
-        <div className="text-center text-sm">
+        <div className="text-center text-sm py-4">
           <div>
             Copyright © 2024-2027 www.gloriasoft.cn All Rights Reserved   上海嘉兰荣光网络科技有限公司版权所有  沪ICP备xxxxxxxxx
           </div> 

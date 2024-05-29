@@ -6,6 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css'
 
+import {
+  IconFriendsCircle,
+  IconTrace,
+  IconOptimize,
+  IconThreeHexagons,
+  IconGraphicStitchingFour,
+  IconTrendTwo,
+  IconChartPie,
+} from '@/app/icons/icon-park'
+
 export default function SectionOne() {
 
   const [selectedTab, setSelectedTab] = React.useState("1");
@@ -58,7 +68,7 @@ export default function SectionOne() {
       <div className=" mx-auto mt-2" id="reveal1">
 
         <div className="flex items-stretch flex-wrap">
-          <div className="gradient-border flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] bg-white/75 px-4 py-8 md:px-8 rounded-md">
+          <div className="gradient-border flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] bg-white/75 px-4 py-6 md:px-8 rounded-md">
             <div className="flex">
               <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-bold flex-1">全渠道商城</h2>
               <div className="flex items-center">
@@ -99,17 +109,17 @@ export default function SectionOne() {
 
 
           </div>
-          <div className="gradient-border flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] bg-white/75 px-4 py-8 md:px-8 rounded-md mt-4 lg:mt-0 lg:ml-4">
+          <div className="gradient-border flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] bg-white/75 px-4 py-6 md:px-8 rounded-md mt-4 lg:mt-0 lg:ml-4">
             <div className="flex flex-col h-full">
               <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-bold">为企业定制的数字化方案</h2>
               <div className="mt-2 flex-1">
                 <Tabs
                   classNames={{
-                    wrapper: 'h-full w-full flex flex-col',
-                    tabList: 'rounded-none h-full w-full flex-wrap',
-                    tab: 'flex-[0_0_0]',
+                    wrapper: 'h-full',
+                    tabList: 'rounded-none h-full ',
+                    tab: 'flex-[0_0_0] justify-start',
                     tabContent: "group-data-[selected=true]:font-bold group-data-[selected=true]:text-white text-gray-700",
-                    panel: 'flex-1 p-4 mt-2 bg-white rounded-sm border',
+                    panel: 'flex-1 rounded-sm bg-white p-4',
                     cursor: 'bg-gradient-to-br from-red-500 to-yellow-500'
                   }}
                   variant="light"
@@ -117,9 +127,14 @@ export default function SectionOne() {
                   radius="md"
                   selectedKey={selectedTab} 
                   onSelectionChange={hanldeTabChange} 
-                  isVertical={false}>
-                  <Tab key="1" title="引流推广">
-                    <div className="h-full flex flex-col bg-white">
+                  isVertical={true}>
+                  <Tab key="1" title={
+                    <div className="flex items-center gap-1">
+                      <IconFriendsCircle theme="filled" size="20"  strokeWidth={2} />
+                      <span>引流推广</span>
+                    </div>
+                  }>
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
                         <p className="mb-2">为企业提供多渠道推广和营销方案</p>
                         <div>
@@ -167,8 +182,13 @@ export default function SectionOne() {
                       </div> */}
                     </div>
                   </Tab>
-                  <Tab key="2" title="效果跟踪和优化">
-                    <div className="px-4 h-full flex flex-col">
+                  <Tab key="2" title={
+                    <div className="flex items-center gap-1">
+                      <IconTrace theme="filled" size="20"  strokeWidth={2} />
+                      <span>追踪优化</span>
+                    </div>
+                  }>
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
                         <div>为企业提供各环节的埋点布署方案、以及优化方案</div>
                         <div>
@@ -197,9 +217,14 @@ export default function SectionOne() {
                     </div>
                   </Tab>
 
-                  <Tab key="3" title="线索转化">
+                  <Tab key="3" title={
+                    <div className="flex items-center gap-1">
+                      <IconOptimize theme="filled" size="20"  strokeWidth={2} />
+                      <span>线索转化</span>
+                    </div>
+                  }>
                   
-                    <div className="px-4 h-full flex flex-col">
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
                         <div>线索转化（官网、mini site、landing page）</div>
                         <div>
@@ -226,8 +251,13 @@ export default function SectionOne() {
                       </div> */}
                     </div>
                   </Tab>
-                  <Tab key="4" title="系统集成">
-                    <div className="px-4 h-full flex flex-col">
+                  <Tab key="4" title={
+                    <div className="flex items-center gap-1">
+                      <IconGraphicStitchingFour theme="filled" size="20"  strokeWidth={2} />
+                      <span>系统集成</span>
+                    </div>
+                  }>
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
                         <div>提供系统级的数据打通和集成方案，帮助企业实现各个系统之间的数据互联互通，提升运营效率和客户满意度。</div>
                         <div>
@@ -254,8 +284,13 @@ export default function SectionOne() {
                       </div> */}
                     </div>
                   </Tab>
-                  <Tab key="5" title="内部提效">
-                    <div className="px-4 h-full flex flex-col">
+                  <Tab key="5" title={
+                    <div className="flex items-center gap-1">
+                      <IconTrendTwo theme="filled" size="20"  strokeWidth={2} />
+                      <span>内部提效</span>
+                    </div>
+                  }>
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
                         <p>企业内部数字化系统的搭建和布署</p>
                         <div>
@@ -283,10 +318,15 @@ export default function SectionOne() {
                     </div>
                    
                   </Tab>
-                  <Tab key="6" title="商业分析">
-                    <div className="px-4 h-full flex flex-col">
+                  <Tab key="6" title={
+                    <div className="flex items-center gap-1">
+                      <IconChartPie theme="filled" size="20"  strokeWidth={2} />
+                      <span>商业分析</span>
+                    </div>
+                  }>
+                    <div className="h-full flex flex-col">
                       <div className="flex-1 space-y-4 ">
-                        <div>BI、数据可视化方案</div>
+                        <div>为企业提供BI、数据可视化方案</div>
                         <div>
                           <b>自助分析工具</b>
                           <div className="text-gray-500">提供用户自定义报表和分析的工具，支持拖拽操作。</div>
@@ -312,7 +352,9 @@ export default function SectionOne() {
                     </div>
                   </Tab>
                 </Tabs>
+                
               </div>
+              
             </div>
           </div>
         </div>

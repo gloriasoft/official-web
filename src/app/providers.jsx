@@ -4,7 +4,7 @@ import {NextUIProvider} from '@nextui-org/react'
 
 export function Providers({children}) {
   return (
-    <NextUIProvider>
+    <NextUIProvider className='min-h-screen'>
       {children}
     </NextUIProvider>
   )

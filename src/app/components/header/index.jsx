@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import {
@@ -9,7 +10,26 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
+  DropdownItem,
+  DropdownTrigger,
+  Dropdown,
+  DropdownMenu,
+  DropdownSection,
+  Button,
 } from "@nextui-org/react";
+
+import { 
+  IconDown,
+  IconWeixinMiniApp,
+  IconWebPage,
+  IconSystem,
+  IconDataScreen,
+  IconSeo,
+  IconCircularConnection,
+  IconCreative,
+  IconAd,
+  IconSixPoints,
+} from '@/app/icons/icon-park'
 
 
 export default function Header({ activeKey }) {
@@ -23,7 +43,7 @@ export default function Header({ activeKey }) {
           base: '',
           wrapper: 'px-12',
           content: 'justify-end',
-          item: 'cursor-pointer border-b border-transparent '
+          item: 'cursor-pointer'
         }}
         maxWidth="full">
         <NavbarBrand>
@@ -40,9 +60,101 @@ export default function Header({ activeKey }) {
         </NavbarBrand>
         <NavbarMenuToggle className="sm:hidden" />
         <NavbarContent justify="end" className="hidden sm:flex lg:space-x-2">
-          <NavbarItem isActive={ activeKey === 'solutions' }>
-            <Link className="text-black" href="/solutions">解决方案</Link>
-          </NavbarItem>
+          <Dropdown showArrow={true}>
+            <NavbarItem isActive={ activeKey === 'solutions' }>
+              <DropdownTrigger>
+                <div className="flex items-center antialiased">
+                  <span>公司业务</span>
+                  <IconDown />
+                </div>
+              </DropdownTrigger>
+              {/* <Link className="text-black" href="/solutions">解决方案</Link> */}
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="services list"
+              className="w-[340px]"
+              itemClasses={{
+                base: "gap-4",
+              }}
+            >
+              <DropdownSection title="软件开发" classNames={{
+                heading: 'text-sm'
+              }} showDivider>
+                <DropdownItem
+                  key="miniprogram"
+                  description="微信、支付宝、抖音、快手、小红书小程序"
+                  startContent={<IconWeixinMiniApp theme="multi-color" size="24" fill={['#58be6b' ,'#58be6b' ,'#FFF' ,'#ffffff']} strokeWidth={2} />}
+                >
+                  全平台小程序
+                </DropdownItem>
+                <DropdownItem
+                  key="website"
+                  description="企业PC、H5官网，公众号主页"
+                  startContent={<IconWebPage theme="filled" size="24" fill="#58be6b" strokeWidth={2}/>}
+                >
+                  企业官网
+                </DropdownItem>
+                <DropdownItem
+                  key="admin"
+                  description="企业中后台系统定制集成"
+                  startContent={<IconSystem theme="filled" fill="#58be6b" size="24" strokeWidth={2} />}
+                >
+                  后台系统
+                </DropdownItem>
+                <DropdownItem
+                  key="BI"
+                  description="企业数据平台搭建，用户行为分析和数据看板"
+                  startContent={<IconDataScreen theme="filled" fill="#58be6b" size="22" strokeWidth={2} />}
+                >
+                  <span className="">数据平台</span>
+                </DropdownItem>
+              </DropdownSection>
+              <DropdownSection title="引流推广" showDivider classNames={{
+                heading: 'text-sm'
+              }}>
+                <DropdownItem
+                    key="SEO"
+                    description="搜索引擎优化（SEO）和搜索引擎营销（SEM）"
+                    startContent={<IconSeo theme="filled" fill="#f05a82" size={24} strokeWidth={2} />}
+                  >
+                  SEO
+                </DropdownItem>
+                <DropdownItem
+                    key="so"
+                    description="提升企业品牌私域流量增长"
+                    startContent={<IconCircularConnection theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
+                  >
+                  私域运营
+                </DropdownItem>
+                <DropdownItem
+                    key="co"
+                    description="推文制定、营销图文及视频"
+                    startContent={<IconCreative theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
+                  >
+                  内容营销
+                </DropdownItem>
+                <DropdownItem
+                    key="ad"
+                    description="腾讯广告、巨量引擎、快手广告、小红书投放"
+                    startContent={<IconAd theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
+                  >
+                  广告投放
+                </DropdownItem>
+              </DropdownSection>
+              <DropdownItem
+                  key="saas"
+                  description="基于企业已有的SaaS平台进行定制扩展"
+                  startContent={<IconSixPoints theme="filled" fill="#f28822" size="24" strokeWidth={2} />}
+                >
+                  
+                  SaaS定制
+                </DropdownItem>
+              
+              
+            </DropdownMenu>
+          </Dropdown>
+
+          
           {/* <NavbarItem>
             <Link className="text-black" href="#achivements">技术成就</Link>
           </NavbarItem> */}
@@ -61,7 +173,7 @@ export default function Header({ activeKey }) {
               href="/solutions"
               size="lg"
             >
-              解决方案
+              公司业务
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem key="">

@@ -15,12 +15,12 @@ export default function About() {
         <h1 className="mt-2"><b>嘉兰荣光</b></h1>
         <h2><b>Gloriasoft</b></h2>
       </div>
-      <div className="text-center text-gray-700">
-        <p>嘉兰荣光©️ 致力于为企业提供一站式数字化解决方案</p>
+      <div className="text-center text-gray-700 p-4">
+        <p>嘉兰荣光致力为企业提供一站式数字化解决方案</p>
         <p></p>
       </div>
 
-      <section className="container mx-auto my-[60px]">
+      <section className="container mx-auto my-[60px] p-4">
        
         <div className="relative">
           <div className="border-3 border-white rounded-sm relative">

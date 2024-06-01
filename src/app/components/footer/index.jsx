@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <div className="">
       <div className="container mx-auto px-12 py-8 border-t border-gray-100">
-        <div className="flex flex-wrap justify-evenly gap-8 text-gray-700">
+        <div className="flex flex-wrap justify-between md:justify-evenly gap-8 text-gray-700">
           <div className="flex flex-col text-sm space-y-2">
             <div className="font-bold">软件开发</div>
             <div>小程序</div>

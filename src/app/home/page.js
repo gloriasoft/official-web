@@ -27,7 +27,7 @@ export default function Home() {
                   radius="full"
                   size="lg"
                   className="mt-8 w-[240px] bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">立即咨询</Button> */}
-                <Link className="btn-contact text-2xl" href="/contacts">
+                <Link className="btn-contact text-2xl" href="/contacts.html">
                   <div className="text-center relative">
                     <span className="">立即咨询</span>
                     <img className="hidden sm:block absolute right-[-40px] z-10" style={{ top: 'calc(50% - 8px)' }} src="/images/btn-contact-arrow.svg" alt="" />
@@ -41,8 +41,8 @@ export default function Home() {
           </div>
         </section>
         <SectionOne></SectionOne>
-        {/* <SectionTwo></SectionTwo> */}
-        {/* <SectionThree></SectionThree> */}
+        <SectionTwo></SectionTwo>
+        <SectionThree></SectionThree>
       </div>
       <Footer></Footer>
     </main>

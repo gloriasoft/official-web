@@ -19,6 +19,7 @@ import {
   Creative,
   Ad,
   SixPoints,
+  Check,
 } from '@icon-park/react'
 
 
@@ -59,3 +60,5 @@ export const IconCreative = Creative
 export const IconAd = Ad
 
 export const IconSixPoints = SixPoints
+
+export const IconCheck = Check

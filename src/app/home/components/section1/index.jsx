@@ -8,7 +8,7 @@ export default function SectionOne() {
         <div className="min-h-[480px] p-4 md:px-8 md:py-12">
           {/* <h2 className="text-4xl text-center">面向企业的定制业务</h2> */}
           {/* <h4 className='text-sm text-gray-700 py-4'></h4> */}
-          <div className="flex flex-wrap justify-between gap-4">
+          <div className="flex flex-wrap justify-center md:justify-between gap-4">
            
             <Card isFooterBlurred shadow='none' radius='sm' className="w-[320px] min-h-[450px]">
               <CardHeader className="absolute z-10 top-1 flex-col items-start">

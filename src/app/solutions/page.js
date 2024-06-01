@@ -1,29 +1,35 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
+import Image from "next/image";
 
 export default function About() {
   return (
     <div>
       <Header activeKey="solutions"></Header>
-      业务介绍
-      <div>
-        各种解决方案的详细介绍
+      
+      <div className="">
+        <div className="bg-white/75" id="siyu">
+          <div className="container mx-auto ">
+            <div className="flex flex-wrap">
+              <div className="">
+                <div className="grid-cols-2 grid-rows-2">
+                  <div>
+
+                  </div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div className="flex-1">
+                <Image className="w-full" src="/images/siyu.png" alt="siyu" width="300" height="300"></Image>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div>
-        商城+定制+运营
-      </div>
-
-      <div>
-        企业官网+引流+数据分析
-      </div>
-
-      <div>
-        私域运营+推广
-      </div>
-
-      <div>
-        
-      </div>
+      <Footer></Footer>
     </div>
   )
 }

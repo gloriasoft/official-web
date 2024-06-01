@@ -47,7 +47,7 @@ export default function Header({ activeKey }) {
         }}
         maxWidth="full">
         <NavbarBrand>
-          <Link className="leading-none text-black" href="/home">
+          <Link className="leading-none text-black" href="/index.html">
             <Image
               src="/images/gloria-logo.svg"
               alt=""
@@ -159,28 +159,18 @@ export default function Header({ activeKey }) {
             <Link className="text-black" href="#achivements">技术成就</Link>
           </NavbarItem> */}
           <NavbarItem className="" isActive={ activeKey === 'about' }>
-            <Link className="text-black" href="/about">公司简介</Link>
+            <Link className="text-black" href="/about.html">公司简介</Link>
           </NavbarItem>
           <NavbarItem isActive={ activeKey === 'contacts' }>
-            <Link className="text-black" href="contacts">联系我们</Link>
+            <Link className="text-black" href="/contacts.html">联系我们</Link>
           </NavbarItem>
         </NavbarContent>
 
         <NavbarMenu>
-          <NavbarMenuItem key="">
+          <NavbarMenuItem key="about" className="border-b-1 border-white py-2">
             <Link
-              className="w-full"
-              href="/solutions"
-              size="lg"
-            >
-              公司业务
-            </Link>
-          </NavbarMenuItem>
-          <NavbarMenuItem key="">
-            <Link
-              className="w-full"
-              href="/about"
-              size="lg"
+              className="w-full text-medium text-gray-700"
+              href="/about.html"
             >
               公司简介
             </Link>
@@ -195,16 +185,22 @@ export default function Header({ activeKey }) {
               技术成就
             </Link>
           </NavbarMenuItem> */}
-          <NavbarMenuItem key="">
+          <NavbarMenuItem key="contacts" className="border-b-1 border-white py-2">
             <Link
-              className="w-full"
-              href="/contacts"
-              size="lg"
+              className="w-full text-medium text-gray-700"
+              href="/contacts.html"
             >
               联系我们
             </Link>
           </NavbarMenuItem>
-
+          <NavbarMenuItem key="solutions">
+            <Link
+              className="w-full text-medium text-gray-700"
+              href="/solutions.html"
+            >
+              公司业务
+            </Link>
+          </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
     </div>

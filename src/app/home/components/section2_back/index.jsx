@@ -1,13 +1,13 @@
-
+"use client";
 import React from "react";
 import { Tabs, Tab, Divider, Button, Card, CardBody } from '@nextui-org/react'
-import Image from "next/image";
 import Slider from './slider'
-import {
-  IconCheck
-} from '@/app/icons/icon-park'
+import './index.css'
+
+
 
 export default function SectionTwo() {
+
   const sliderSetting = {
     dots: true,
     // fade: true,
@@ -22,15 +22,16 @@ export default function SectionTwo() {
     prevArrow: (<></>),
   }
 
-
   return (
-    <section className="my-8">
-      <div className="container mx-auto" id="reveal1">
-        <div className="flex flex-wrap gap-8 p-4">
-          <Card className="flex-1 min-w-[350px] bg-white/75" shadow="none">
+    <section className="my-4 py-8 ">
+
+      <div className="container mx-auto mt-2" id="reveal1">
+
+        <div className="flex flex-wrap">
+          <Card className="flex-1 min-w-[350px] sm:min-w-[480px] bg-white/75" shadow="none">
             <CardBody className="pb-[45px] px-8">
               <div className="flex">
-                <h2 className="flex-1 text-[20px] sm:text-[24px]  lg:text-[36px] xl:text-[40px] font-bold">全渠道商城</h2>
+                <h2 className="flex-1 text-[28px] sm:text-[32px] md:text-[40px] font-bold">全渠道商城</h2>
                 <div className="flex items-center">
                   <span className="mr-2">生态合作伙伴</span>
                   <img className="h-[18px]" src="https://cdn2.weimob.com/saas/@assets/saas-fe-group-web-stc/img/weimobLogo.png?v=100" alt="" />
@@ -68,51 +69,11 @@ export default function SectionTwo() {
             </CardBody>
 
           </Card>
-          <div className="flex-1 min-w-[350px] sm:min-w-[680px]">
+          <div className="flex-1 min-h-[480px] min-w-[350px] sm:min-w-[480px] px-4 md:px-8">
 
-            <div className="h-full grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 lg:gap-8">
-              <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">SEO</h2>
-                <h4 className="text-sm text-gray-700">搜索引擎优化</h4>
-                <ul className="text-sm py-4 space-y-2">
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 标题、内容、结构优化</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 品牌词、关键词匹配</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 内链、外链调整</li>
-                </ul>
-              </div>
-              <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">私域运营</h2>
-                <h4 className="text-sm text-gray-700">提升企业品牌私域流量增长</h4>
-                <ul className="text-sm py-4 space-y-2">
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 线上、线下流量导入</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 用户分群，定向营销</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 互动、转化、复购、推荐</li>
-                </ul>
-              </div>
-              <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">内容营销</h2>
-                <h4 className="text-sm text-gray-700">公众号与视频图文</h4>
-                <ul className="text-sm py-4 space-y-2">
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 公众号功能配置</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 推文制定</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 营销图文及视频</li>
-                </ul>
-              </div>
-              <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">广告投放</h2>
-                <h4 className="text-sm text-gray-700">主流互联网媒介投放</h4>
-                <ul className="text-sm py-4 space-y-2">
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 腾讯广告</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 巨量引擎</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 小红书头发</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-
-
     </section>
   )
 }

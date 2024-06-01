@@ -32,7 +32,7 @@ export default function Contacts() {
   return (
     <div className=''>
       <Header activeKey="contacts"></Header>
-      <div className="min-h-[768px] flex items-center">
+      <div className="md:min-h-[768px] flex items-center">
         <div className="container mx-auto">
           <div className='flex flex-wrap items-stretch justify-center gap-4'>
             <div className='min-w-[360px] max-w-[600px] px-4'>
@@ -67,12 +67,12 @@ export default function Contacts() {
                 <Button
                   type='submit'
                   onClick={handleSubmit}
-                  className='w-[200px] mx-auto bg-gradient-to-br from-red-500 to-yellow-500 text-white'
+                  className='w-full md:w-[200px] mx-auto bg-gradient-to-br from-red-500 to-yellow-500 text-white'
                   radius='sm'>确认</Button>
               </form>
             </div>
-            <div className='w-[1px] bg-gray-300'></div>
-            <div className='p-4 space-y-4 text-sm'>
+            <div className='hidden md:block w-[1px] bg-gray-300'></div>
+            <div className='hidden md:block p-4 space-y-4 text-sm'>
               {/* <p>
                 <b>公司邮箱：</b> <span className='ml-4'>contact@gloriasoft.cn</span>
               </p>

@@ -28,8 +28,8 @@ export default function Footer() {
           <div className=" flex flex-col text-sm space-y-2">
             <div className="font-bold">联系方式</div>
           
-            <div>邮箱：<Link href="mailto:contact@gloriasoft.cn">contact@gloriasoft.cn</Link></div>
-            <div>电话：<Link href="tel:13041608631">13041608631</Link></div>
+            <div>邮箱：<Link className="underline" href="mailto:contact@gloriasoft.cn">contact@gloriasoft.cn</Link></div>
+            <div>电话：<Link className="underline" href="tel:13041608631">13041608631</Link></div>
             <div className="hidden">公司地址：xxxxxxxxxxxxx</div>
           </div>
         </div>

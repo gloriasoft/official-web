@@ -45,9 +45,12 @@ export default function Header({ activeKey }) {
           content: 'justify-end',
           item: 'cursor-pointer'
         }}
+        style={{
+          '-webkit-backdrop-filter': 'blur(16px) saturate(1.5)'
+        }}
         maxWidth="full">
         <NavbarBrand>
-          <Link className="leading-none text-black" href="/index.html">
+          <Link className="leading-none text-black" href="/home">
             <Image
               src="/images/gloria-logo.svg"
               alt=""
@@ -159,10 +162,10 @@ export default function Header({ activeKey }) {
             <Link className="text-black" href="#achivements">技术成就</Link>
           </NavbarItem> */}
           <NavbarItem className="" isActive={ activeKey === 'about' }>
-            <Link className="text-black" href="/about.html">公司简介</Link>
+            <Link className="text-black" href="/about">公司简介</Link>
           </NavbarItem>
           <NavbarItem isActive={ activeKey === 'contacts' }>
-            <Link className="text-black" href="/contacts.html">联系我们</Link>
+            <Link className="text-black" href="/contacts">联系我们</Link>
           </NavbarItem>
         </NavbarContent>
 
@@ -170,7 +173,7 @@ export default function Header({ activeKey }) {
           <NavbarMenuItem key="about" className="border-b-1 border-gray-200 py-2">
             <Link
               className="w-full text-medium text-gray-700"
-              href="/about.html"
+              href="/about"
             >
               公司简介
             </Link>
@@ -188,7 +191,7 @@ export default function Header({ activeKey }) {
           <NavbarMenuItem key="contacts" className="border-b-1 border-gray-200 py-2">
             <Link
               className="w-full text-medium text-gray-700"
-              href="/contacts.html"
+              href="/contacts"
             >
               联系我们
             </Link>
@@ -196,7 +199,7 @@ export default function Header({ activeKey }) {
           <NavbarMenuItem key="solutions">
             <Link
               className="w-full text-medium text-gray-700"
-              href="/solutions.html"
+              href="/solutions"
             >
               公司业务
             </Link>

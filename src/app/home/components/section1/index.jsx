@@ -21,7 +21,11 @@ export default function SectionOne() {
                 className="rounded-none z-0 w-full h-full object-cover hover:scale-125"
                 src="/images/apps.jpg"
               />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+              <CardFooter
+                style={{
+                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                }}
+                className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
                   <p className="text-gray-100 text-sm">1000+电商小程序研发经验</p>
                   {/* <p className='text-gray-100 text-sm'>电商 零售 餐饮 社交 游戏 活动</p> */}
@@ -43,7 +47,11 @@ export default function SectionOne() {
                 className="rounded-none z-0 w-full h-full object-cover hover:scale-125 "
                 src="/images/webdesign.png"
               />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+              <CardFooter
+                style={{
+                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                }}
+                className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
                   <p className="text-gray-700 text-sm">专业UI和交互设计，提升用户体验</p>
                 </div>
@@ -64,7 +72,11 @@ export default function SectionOne() {
                 className="rounded-none z-0 w-full h-full object-cover hover:scale-125 "
                 src="/images/admin-sys.jpeg"
               />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+              <CardFooter
+                style={{
+                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                }}
+                className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
                   <p className="text-gray-700 text-sm">深度结合业务，定制数字化流程</p>
                 </div>
@@ -85,7 +97,11 @@ export default function SectionOne() {
                 className="rounded-none z-0 w-full h-full object-cover hover:scale-125 "
                 src="/images/data-analysis.jpg"
               />
-              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+              <CardFooter
+                style={{
+                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                }}
+                className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
                   <p className="text-gray-100 text-sm">全链路数据可视化，助力决策</p>
                 </div>

@@ -72,7 +72,7 @@ export default function SectionTwo() {
 
             <div className="h-full grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 lg:gap-8">
               <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">SEO</h2>
+                <h2 className="text-lg md:text-2xl font-bold">SEO</h2>
                 <h4 className="text-sm text-gray-700">搜索引擎优化</h4>
                 <ul className="text-sm py-4 space-y-2">
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 标题、内容、结构优化</li>
@@ -81,7 +81,7 @@ export default function SectionTwo() {
                 </ul>
               </div>
               <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">私域运营</h2>
+                <h2 className="text-lg md:text-2xl font-bold">私域运营</h2>
                 <h4 className="text-sm text-gray-700">提升企业品牌私域流量增长</h4>
                 <ul className="text-sm py-4 space-y-2">
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 线上、线下流量导入</li>
@@ -90,7 +90,7 @@ export default function SectionTwo() {
                 </ul>
               </div>
               <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">内容营销</h2>
+                <h2 className="text-lg md:text-2xl font-bold">内容营销</h2>
                 <h4 className="text-sm text-gray-700">公众号与视频图文</h4>
                 <ul className="text-sm py-4 space-y-2">
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 公众号功能配置</li>
@@ -99,7 +99,7 @@ export default function SectionTwo() {
                 </ul>
               </div>
               <div className="bg-white/75 p-4 md:p-8 rounded-md gradient-border">
-                <h2 className="text-2xl font-bold">广告投放</h2>
+                <h2 className="text-lg md:text-2xl font-bold">广告投放</h2>
                 <h4 className="text-sm text-gray-700">主流互联网媒介投放</h4>
                 <ul className="text-sm py-4 space-y-2">
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 腾讯广告</li>

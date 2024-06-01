@@ -33,9 +33,9 @@ export default function Contacts() {
     <div className=''>
       <Header activeKey="contacts"></Header>
       <div className="md:min-h-[768px] flex items-center">
-        <div className="container mx-auto">
+        <div className="container mx-auto py-4">
           <div className='flex flex-wrap items-stretch justify-center gap-4'>
-            <div className='min-w-[360px] max-w-[600px] px-4'>
+            <div className='min-w-[360px] md:max-w-[600px] px-4'>
               <p className='text-gray-500 py-4 text-sm'>留下您的联系方式，我们会主动与您联系</p>
               <form action='#' className="flex flex-col gap-8">
                 <Input

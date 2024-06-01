@@ -166,8 +166,8 @@ export default function Header({ activeKey }) {
           </NavbarItem>
         </NavbarContent>
 
-        <NavbarMenu>
-          <NavbarMenuItem key="about" className="border-b-1 border-white py-2">
+        <NavbarMenu className="bg-white">
+          <NavbarMenuItem key="about" className="border-b-1 border-gray-200 py-2">
             <Link
               className="w-full text-medium text-gray-700"
               href="/about.html"
@@ -185,7 +185,7 @@ export default function Header({ activeKey }) {
               技术成就
             </Link>
           </NavbarMenuItem> */}
-          <NavbarMenuItem key="contacts" className="border-b-1 border-white py-2">
+          <NavbarMenuItem key="contacts" className="border-b-1 border-gray-200 py-2">
             <Link
               className="w-full text-medium text-gray-700"
               href="/contacts.html"

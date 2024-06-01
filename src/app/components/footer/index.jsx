@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -27,10 +28,9 @@ export default function Footer() {
           <div className=" flex flex-col text-sm space-y-2">
             <div className="font-bold">联系方式</div>
           
-            <div>邮箱：contact@gloriasoft.cn</div>
-            <div>电话：13041608631</div>
+            <div>邮箱：<Link href="mailto:contact@gloriasoft.cn">contact@gloriasoft.cn</Link></div>
+            <div>电话：<Link href="tel:13041608631">13041608631</Link></div>
             <div className="hidden">公司地址：xxxxxxxxxxxxx</div>
-          
           </div>
         </div>
         <div className="text-center text-sm py-4 mt-8 text-gray-700">

@@ -12,7 +12,7 @@ export function Providers({children}) {
   }, [])
 
   return (
-    <NextUIProvider className='min-h-screen'>
+    <NextUIProvider className='light min-h-screen'>
       {children}
     </NextUIProvider>
   )

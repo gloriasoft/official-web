@@ -1,11 +1,12 @@
 import { Tabs, Tab, Divider, Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import Link from 'next/link'
 
 export default function SectionOne() {
   return (
     <section className=" bg-white/30">
       <div className="container mx-auto">
 
-        <div className="min-h-[480px] p-4 md:px-8 md:py-12">
+        <div className="min-h-[480px] py-4 md:py-12">
           {/* <h2 className="text-4xl text-center">面向企业的定制业务</h2> */}
           {/* <h4 className='text-sm text-gray-700 py-4'></h4> */}
           <div className="flex flex-wrap justify-center md:justify-between gap-4">
@@ -30,9 +31,16 @@ export default function SectionOne() {
                   <p className="text-gray-100 text-sm">1000+电商小程序研发经验</p>
                   {/* <p className='text-gray-100 text-sm'>电商 零售 餐饮 社交 游戏 活动</p> */}
                 </div>
-                <Button className="text-tiny" color="primary" radius="full" size="sm">
-                  了解更多
-                </Button>
+                
+                <Link href="/solutions/develop#miniprogram" className="leading-none text-white">
+                  <Button
+                    className="text-tiny" 
+                    color="primary" 
+                    radius="full" 
+                    size="sm">
+                    了解更多
+                  </Button>
+                  </Link>
               </CardFooter>
             </Card>
 

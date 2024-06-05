@@ -1,6 +1,9 @@
 "use client"
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from 'next/navigation'
+
 import {
   Navbar,
   NavbarBrand,
@@ -9,7 +12,6 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
   DropdownItem,
   DropdownTrigger,
   Dropdown,
@@ -33,7 +35,11 @@ import {
 
 
 export default function Header({ activeKey }) {
-  
+  const router = useRouter()
+
+  function handleDropdownClick(key) {
+    router.push(key)
+  }
 
   return (
     <div className="sticky top-0 z-40">
@@ -57,6 +63,7 @@ export default function Header({ activeKey }) {
               width="32"
               height="32"
               className="logo inline-block" />
+            {/* <span className="pl-2 font-semibold bg-clip-text bg-gradient-to-r from-green-700 via-yellow-500 to-red-700 text-transparent">嘉兰荣光 Gloriasoft</span> */}
             <span className="pl-2">嘉兰荣光 Gloriasoft</span>
           </Link>
           
@@ -79,33 +86,38 @@ export default function Header({ activeKey }) {
               itemClasses={{
                 base: "gap-4",
               }}
+              onAction={handleDropdownClick}
             >
               <DropdownSection title="软件开发" classNames={{
                 heading: 'text-sm'
               }} showDivider>
                 <DropdownItem
-                  key="miniprogram"
+                  key="/solutions/develop#miniprogram"
+                  textValue="miniprogram"
                   description="微信、支付宝、抖音、快手、小红书小程序"
                   startContent={<IconWeixinMiniApp theme="multi-color" size="24" fill={['#58be6b' ,'#58be6b' ,'#FFF' ,'#ffffff']} strokeWidth={2} />}
                 >
                   全平台小程序
                 </DropdownItem>
                 <DropdownItem
-                  key="website"
+                  key="/solutions/develop#website"
+                  textValue="website"
                   description="企业PC、H5官网，公众号主页"
                   startContent={<IconWebPage theme="filled" size="24" fill="#58be6b" strokeWidth={2}/>}
                 >
                   企业官网
                 </DropdownItem>
                 <DropdownItem
-                  key="admin"
+                  key="/solutions/develop#admin"
+                  textValue="admin"
                   description="企业中后台系统定制集成"
                   startContent={<IconSystem theme="filled" fill="#58be6b" size="24" strokeWidth={2} />}
                 >
                   后台系统
                 </DropdownItem>
                 <DropdownItem
-                  key="BI"
+                  key="/solutions/develop#bi"
+                  textValue="BI"
                   description="企业数据平台搭建，用户行为分析和数据看板"
                   startContent={<IconDataScreen theme="filled" fill="#58be6b" size="22" strokeWidth={2} />}
                 >
@@ -117,20 +129,23 @@ export default function Header({ activeKey }) {
               }}>
                 <DropdownItem
                     key="SEO"
+                    textValue="SEO"
                     description="搜索引擎优化（SEO）和搜索引擎营销（SEM）"
                     startContent={<IconSeo theme="filled" fill="#f05a82" size={24} strokeWidth={2} />}
                   >
                   SEO
                 </DropdownItem>
                 <DropdownItem
-                    key="so"
+                    key="operation"
+                    textValue="operation"
                     description="提升企业品牌私域流量增长"
                     startContent={<IconCircularConnection theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
                   >
                   私域运营
                 </DropdownItem>
                 <DropdownItem
-                    key="co"
+                    key="market"
+                    textValue="market"
                     description="推文制定、营销图文及视频"
                     startContent={<IconCreative theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
                   >
@@ -138,6 +153,7 @@ export default function Header({ activeKey }) {
                 </DropdownItem>
                 <DropdownItem
                     key="ad"
+                    textValue="ad"
                     description="腾讯广告、巨量引擎、快手广告、小红书投放"
                     startContent={<IconAd theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
                   >
@@ -146,6 +162,7 @@ export default function Header({ activeKey }) {
               </DropdownSection>
               <DropdownItem
                   key="saas"
+                  textValue="saas"
                   description="基于企业已有的SaaS平台进行定制扩展"
                   startContent={<IconSixPoints theme="filled" fill="#f28822" size="24" strokeWidth={2} />}
                 >

@@ -26,7 +26,7 @@ export default function SectionTwo() {
   return (
     <section className="my-8">
       <div className="container mx-auto" id="reveal1">
-        <div className="flex flex-wrap gap-8 p-4">
+        <div className="flex flex-wrap gap-8">
           <Card className="flex-1 min-w-[350px] bg-white/75" radius="sm" shadow="none">
             <CardBody className="pb-[45px] px-8">
               <div className="flex">

@@ -32,6 +32,11 @@ function ContactTrigger() {
         [name, phone, company, desc].join('_')
       ])
       console.log('send success', [name, phone, company, desc].join('_'))
+      
+      const xhr = new XMLHttpRequest()
+      const reqUrl = `${location.protocol}//${location.host}${location.pathname}?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&company=${encodeURIComponent(company)}&desc=${encodeURIComponent(desc)}`
+      xhr.open("GET", reqUrl)
+      xhr.send()
     }
   }
 

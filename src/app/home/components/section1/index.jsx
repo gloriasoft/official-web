@@ -24,7 +24,7 @@ export default function SectionOne() {
               />
               <CardFooter
                 style={{
-                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                  'WebkitBackdropFilter': 'blur(8px) saturate(1.5)'
                 }}
                 className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -57,7 +57,7 @@ export default function SectionOne() {
               />
               <CardFooter
                 style={{
-                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                  'WebkitBackdropFilter': 'blur(8px) saturate(1.5)'
                 }}
                 className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -82,7 +82,7 @@ export default function SectionOne() {
               />
               <CardFooter
                 style={{
-                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                  'WebkitBackdropFilter': 'blur(8px) saturate(1.5)'
                 }}
                 className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
@@ -97,21 +97,21 @@ export default function SectionOne() {
             <Card isFooterBlurred shadow='none' radius='sm' className="w-[320px] min-h-[450px]">
               <CardHeader className="absolute z-10 top-1 flex-col items-start">
                 {/* <p className="text-tiny text-white/60 uppercase font-bold">New</p> */}
-                <h4 className="text-white font-medium text-2xl">数据平台</h4>
+                <h4 className="text-white font-medium text-2xl">框架迁移</h4>
               </CardHeader>
               <Image
                 removeWrapper
                 alt="data charts"
                 className="rounded-none z-0 w-full h-full object-cover hover:scale-125 "
-                src="/images/data-analysis.jpg"
+                src="/images/framework.png"
               />
               <CardFooter
                 style={{
-                  '-webkit-backdrop-filter': 'blur(8px) saturate(1.5)'
+                  'WebkitBackdropFilter': 'blur(8px) saturate(1.5)'
                 }}
                 className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                 <div>
-                  <p className="text-gray-100 text-sm">全链路数据可视化，助力决策</p>
+                  <p className="text-gray-100 text-sm">打破框架限制，解放生产力</p>
                 </div>
                 <Button className="text-tiny" color="primary" radius="full" size="sm">
                   了解更多

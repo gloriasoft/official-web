@@ -20,8 +20,7 @@ export default function About() {
         <p></p>
       </div>
 
-      <section className="container mx-auto my-[60px] p-4">
-       
+      <section className="container mx-auto">
         <div className="relative">
           <div className="border-3 border-white rounded-sm relative">
             <div className="p-8 lg:p-12">

@@ -52,7 +52,7 @@ export default function Header({ activeKey }) {
           item: 'cursor-pointer'
         }}
         style={{
-          '-webkit-backdrop-filter': 'blur(16px) saturate(1.5)'
+          'WebkitBackdropFilter': 'blur(16px) saturate(1.5)'
         }}
         maxWidth="full">
         <NavbarBrand>
@@ -117,11 +117,11 @@ export default function Header({ activeKey }) {
                 </DropdownItem>
                 <DropdownItem
                   key="/solutions/develop#bi"
-                  textValue="BI"
-                  description="企业数据平台搭建，用户行为分析和数据看板"
+                  textValue="framework"
+                  description="React和Vue项目互相迁移、融合"
                   startContent={<IconDataScreen theme="filled" fill="#58be6b" size="22" strokeWidth={2} />}
                 >
-                  <span className="">数据平台</span>
+                  <span className="">框架迁移</span>
                 </DropdownItem>
               </DropdownSection>
               <DropdownSection title="引流推广" showDivider classNames={{

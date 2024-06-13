@@ -10,7 +10,7 @@ export default function Footer() {
             <div>小程序</div>
             <div>企业官网</div>
             <div>后台系统</div>
-            <div>数据平台</div>
+            <div>框架迁移</div>
           </div>
           <div className="flex flex-col text-sm space-y-2">
             <div className="font-bold">引流推广</div>

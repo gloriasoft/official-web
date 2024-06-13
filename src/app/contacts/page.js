@@ -25,6 +25,11 @@ export default function Contacts() {
         [name, phone, company, desc].join('_')
       ])
       console.log('send success', [name, phone, company, desc].join('_'))
+
+      const xhr = new XMLHttpRequest()
+      const reqUrl = `${location.protocol}//${location.host}${location.pathname}?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&company=${encodeURIComponent(company)}&desc=${encodeURIComponent(desc)}`
+      xhr.open("GET", reqUrl)
+      xhr.send()
     }
   }
 
@@ -37,7 +42,7 @@ export default function Contacts() {
           <div className='flex flex-wrap items-stretch justify-center gap-4'>
             <div className='min-w-[360px] md:max-w-[600px] px-4'>
               <p className='text-gray-500 py-4 text-sm'>留下您的联系方式，我们会主动与您联系</p>
-              <form action='#' className="flex flex-col gap-8">
+              <form action="#" className="flex flex-col gap-8">
                 <Input
                   isRequired
                   label="您的称呼"

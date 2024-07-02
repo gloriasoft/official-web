@@ -40,7 +40,7 @@ export default function SectionOne() {
                     size="sm">
                     了解更多
                   </Button>
-                  </Link>
+                </Link>
               </CardFooter>
             </Card>
 
@@ -63,9 +63,15 @@ export default function SectionOne() {
                 <div>
                   <p className="text-gray-700 text-sm">专业UI和交互设计，提升用户体验</p>
                 </div>
-                <Button className="text-tiny" color="primary" radius="full" size="sm">
-                  了解更多
-                </Button>
+                <Link href="/contacts" className="leading-none text-white">
+                  <Button
+                    className="text-tiny" 
+                    color="primary" 
+                    radius="full" 
+                    size="sm">
+                    了解更多
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
 
@@ -88,9 +94,15 @@ export default function SectionOne() {
                 <div>
                   <p className="text-gray-700 text-sm">深度结合业务，定制数字化流程</p>
                 </div>
-                <Button className="text-tiny" color="primary" radius="full" size="sm">
-                  了解更多
-                </Button>
+                <Link href="/contacts" className="leading-none text-white">
+                  <Button
+                    className="text-tiny" 
+                    color="primary" 
+                    radius="full" 
+                    size="sm">
+                    了解更多
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
 
@@ -113,9 +125,15 @@ export default function SectionOne() {
                 <div>
                   <p className="text-gray-100 text-sm">打破框架限制，解放生产力</p>
                 </div>
-                <Button className="text-tiny" color="primary" radius="full" size="sm">
-                  了解更多
-                </Button>
+                <Link href="/contacts" className="leading-none text-white">
+                  <Button
+                    className="text-tiny" 
+                    color="primary" 
+                    radius="full" 
+                    size="sm">
+                    了解更多
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </div>

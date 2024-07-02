@@ -22,7 +22,7 @@ export default function About() {
 
       <section className="container mx-auto">
         <div className="relative">
-          <div className="border-3 border-white rounded-sm relative">
+          {/* <div className="border-3 border-white rounded-sm relative">
             <div className="p-8 lg:p-12">
               <div className="py-2">
                 <h1 className="leading-none text-[20px] md:text-[28px] text-[#4e60b1]">联合创始人 & CEO</h1>
@@ -34,7 +34,7 @@ export default function About() {
 
               </p>
             </div>
-          </div>
+          </div> */}
       
         </div>
       </section>

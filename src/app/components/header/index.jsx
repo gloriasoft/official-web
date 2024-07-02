@@ -100,7 +100,7 @@ export default function Header({ activeKey }) {
                   全平台小程序
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop/website"
+                  key="/contacts"
                   textValue="website"
                   description="企业PC、H5官网，公众号主页"
                   startContent={<IconWebPage theme="filled" size="24" fill="#58be6b" strokeWidth={2}/>}
@@ -108,7 +108,7 @@ export default function Header({ activeKey }) {
                   企业官网
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop/admin"
+                  key="/contacts"
                   textValue="admin"
                   description="企业中后台系统定制集成"
                   startContent={<IconSystem theme="filled" fill="#58be6b" size="24" strokeWidth={2} />}
@@ -116,7 +116,7 @@ export default function Header({ activeKey }) {
                   后台系统
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop/framework"
+                  key="/contacts"
                   textValue="framework"
                   description="React和Vue项目互相迁移、融合"
                   startContent={<IconDataScreen theme="filled" fill="#58be6b" size="22" strokeWidth={2} />}
@@ -128,7 +128,7 @@ export default function Header({ activeKey }) {
                 heading: 'text-sm'
               }}>
                 <DropdownItem
-                    key="SEO"
+                    key="/contacts"
                     textValue="SEO"
                     description="搜索引擎优化（SEO）和搜索引擎营销（SEM）"
                     startContent={<IconSeo theme="filled" fill="#f05a82" size={24} strokeWidth={2} />}
@@ -136,7 +136,7 @@ export default function Header({ activeKey }) {
                   SEO
                 </DropdownItem>
                 <DropdownItem
-                    key="operation"
+                    key="/contacts"
                     textValue="operation"
                     description="提升企业品牌私域流量增长"
                     startContent={<IconCircularConnection theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
@@ -144,7 +144,7 @@ export default function Header({ activeKey }) {
                   私域运营
                 </DropdownItem>
                 <DropdownItem
-                    key="market"
+                    key="/contacts"
                     textValue="market"
                     description="推文制定、营销图文及视频"
                     startContent={<IconCreative theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
@@ -152,7 +152,7 @@ export default function Header({ activeKey }) {
                   内容营销
                 </DropdownItem>
                 <DropdownItem
-                    key="ad"
+                    key="/contacts"
                     textValue="ad"
                     description="腾讯广告、巨量引擎、快手广告、小红书投放"
                     startContent={<IconAd theme="filled" fill="#f05a82" size="24" strokeWidth={2} />}
@@ -161,7 +161,7 @@ export default function Header({ activeKey }) {
                 </DropdownItem>
               </DropdownSection>
               <DropdownItem
-                  key="saas"
+                  key="/contacts"
                   textValue="saas"
                   description="基于企业已有的SaaS平台进行定制扩展"
                   startContent={<IconSixPoints theme="filled" fill="#f28822" size="24" strokeWidth={2} />}

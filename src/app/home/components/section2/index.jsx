@@ -104,7 +104,7 @@ export default function SectionTwo() {
                 <ul className="text-sm py-4 space-y-2">
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 腾讯广告</li>
                   <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 巨量引擎</li>
-                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 小红书头发</li>
+                  <li className="flex items-center gap-2"><IconCheck fill="#2e9b56" /> 小红书投放</li>
                 </ul>
               </div>
             </div>

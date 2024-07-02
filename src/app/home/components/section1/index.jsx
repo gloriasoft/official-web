@@ -32,7 +32,7 @@ export default function SectionOne() {
                   {/* <p className='text-gray-100 text-sm'>电商 零售 餐饮 社交 游戏 活动</p> */}
                 </div>
                 
-                <Link href="/solutions/develop#miniprogram" className="leading-none text-white">
+                <Link href="/solutions/develop/miniprogram" className="leading-none text-white">
                   <Button
                     className="text-tiny" 
                     color="primary" 

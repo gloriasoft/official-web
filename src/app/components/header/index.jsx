@@ -92,7 +92,7 @@ export default function Header({ activeKey }) {
                 heading: 'text-sm'
               }} showDivider>
                 <DropdownItem
-                  key="/solutions/develop#miniprogram"
+                  key="/solutions/develop/miniprogram"
                   textValue="miniprogram"
                   description="微信、支付宝、抖音、快手、小红书小程序"
                   startContent={<IconWeixinMiniApp theme="multi-color" size="24" fill={['#58be6b' ,'#58be6b' ,'#FFF' ,'#ffffff']} strokeWidth={2} />}
@@ -100,7 +100,7 @@ export default function Header({ activeKey }) {
                   全平台小程序
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop#website"
+                  key="/solutions/develop/website"
                   textValue="website"
                   description="企业PC、H5官网，公众号主页"
                   startContent={<IconWebPage theme="filled" size="24" fill="#58be6b" strokeWidth={2}/>}
@@ -108,7 +108,7 @@ export default function Header({ activeKey }) {
                   企业官网
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop#admin"
+                  key="/solutions/develop/admin"
                   textValue="admin"
                   description="企业中后台系统定制集成"
                   startContent={<IconSystem theme="filled" fill="#58be6b" size="24" strokeWidth={2} />}
@@ -116,7 +116,7 @@ export default function Header({ activeKey }) {
                   后台系统
                 </DropdownItem>
                 <DropdownItem
-                  key="/solutions/develop#bi"
+                  key="/solutions/develop/framework"
                   textValue="framework"
                   description="React和Vue项目互相迁移、融合"
                   startContent={<IconDataScreen theme="filled" fill="#58be6b" size="22" strokeWidth={2} />}
@@ -216,7 +216,7 @@ export default function Header({ activeKey }) {
           <NavbarMenuItem key="solutions">
             <Link
               className="w-full text-medium text-gray-700"
-              href="/solutions"
+              href="/solutions/develop/"
             >
               公司业务
             </Link>

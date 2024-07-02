@@ -8,14 +8,14 @@ import {
   CardBody,
 } from "@nextui-org/react"
 import Image from "next/image"
-import MiniPlatforms from "./components/mini-platforms"
+import MiniPlatforms from "../components/mini-platforms"
 
 export default function Develop() {
   return (
     <div>
       <Header></Header>
-      <div>
-        <section className="min-h-screen bg-gradient-radial from-[#e5f0f9] from-30%  to-[#d6e2ed] to-70%" style={{
+      <div className="">
+        <section className="min-h-screen pb-8 bg-gradient-radial from-[#e5f0f9] from-30%  to-[#d6e2ed] to-70%" style={{
           backgroundSize: '100vw 100vh',
           backgroundPosition: 'center -50vh'
         }}>
@@ -27,19 +27,30 @@ export default function Develop() {
                   <br />获得全平台通用小程序
                 </h1>
                 <h3 className="mt-2">我们使用跨平台技术，只需进行一次开发，无需额外付费即可快速部署到多个平台。</h3>
-                <h3 className=""></h3>
+                <div className="flex flex-wrap gap-4 mt-4">
+                  <Image id="app-wechat" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/wechat.png" width="48" height="48" alt="wechat"></Image>
+                  <Image id="app-alipay" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/alipay.png" width="48" height="48" alt="alipay"></Image>
+                  <Image id="app-baidu" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/baidu.png" width="48" height="48" alt="baidu"></Image>
+                  <Image id="app-redbook" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/redbook.png" width="48" height="48" alt="redbook"></Image>
+                  <Image id="app-kuaishou" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/kuaishou.png" width="48" height="48" alt="kuaishou"></Image>
+                  <Image id="app-tiktok" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/tiktok.png" width="48" height="48" alt="tiktok"></Image>
+                  <Image id="app-dingtalk" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/dingtalk.png" width="48" height="48" alt="dingtalk"></Image>
+                  <Image id="app-qq" className=" w-[30px] lg:w-[36px] grayscale-[0.25]" src="/images/app-logos/qq.png" width="48" height="48" alt="qq"></Image>
+                </div>
                 <div className="my-8">
                   <Button radius="full" size="lg" className="w-full sm:w-[180px] bg-gradient-to-br from-red-500 to-yellow-500 text-white">立即咨询</Button>
                 </div>
 
                 
               </div>
-              <div className="flex-1 hidden md:block text-center">
-                <MiniPlatforms></MiniPlatforms>
+              <div className=" hidden md:block text-center">
+                {/* <MiniPlatforms></MiniPlatforms> */}
 
               </div>
 
             </div>
+
+            
 
             <div className="border rounded-md bg-white p-4 flex items-center h-full md:space-x-4 shadow-sm shadow-black/15 z-10 flex-wrap">
               <div className="flex-1 text-center p-4 min-w-[300px]">
@@ -100,29 +111,25 @@ export default function Develop() {
                   <Card
                     shadow="sm"
                     radius="sm"
-                    className=" min-w-[360px]  border ">
-                    <CardBody className="p-4 md:p-8 ">
+                    className=" min-w-[360px]  border h-full">
+                    <CardBody className="px-4 pt-4 md:px-8 md:pt-8 pb-0 ">
                       <h1 className="text-2xl ">平台代金券、商家券</h1>
                       <p className="text-gray-700">接入微信、支付宝渠道代金券和商家券</p>
-                      <h1 className="font-semibold">高效的消息触达提醒</h1>
-                      <div className="overflow-hidden flex flex-wrap h-full items-center mt-4 gap-4">
-                        <div className="flex-1 text-sm sm:text-medium min-w-[180px] md:min-w-min">
-                          
-                          <h2 className="mt-4 text-gray-700">商家券可插入用户微信/支付宝卡包，在券即将过期前，会收到过期提醒通知。</h2>
+                     
+                      <div className="overflow-hidden flex flex-wrap h-full items-end mt-4 gap-4">
+                        <div className="flex-1 text-sm sm:text-medium min-w-[180px] md:min-w-min sm:h-[50%]">
+                          <h1 className="font-semibold">丰富的服务连接能力</h1>
+                          <h2 className="mt-4 text-gray-700">商家券可跳转商家自有“公众号”、“小程序”，让用户更容易连接到商家的服务，获取更多商家品牌信息和活动优惠信息。</h2>
                           
                         </div>
-                        <div className="flex-1 min-w-[240px] p-2 bg-[#268858]">
+                        {/* <div className="flex-1 min-w-[240px] p-2 bg-[#268858]">
                           <Image className="w-full h-full object-contain " src="/images/wechat-coupon-1.png" alt="coupon" width="300" height="300"></Image>
+                        </div> */}
+                         <div>
+                          <Image className="object-contain"  src="/images/wechat-coupon-3.png" alt="coupon-card" width="312" height="400"></Image>
                         </div>
                       </div>
-                      <div className="flex flex-wrap h-full items-center gap-4">
-                        <div className="flex-1 min-w-[240px] p-2 bg-[#268858]">
-                          <Image className="w-full h-full object-contain " src="/images/wechat-coupon-subscribe.png" alt="coupon" width="300" height="300"></Image>
-                        </div>
-                        <div className="flex-1 min-w-[180px]">
-                          <h2 className="mt-2 text-gray-700">通过消息通知，增强用户对商家券优惠感知，提升券的核销转化率，为商家带来更多的交易收益。</h2>
-                        </div>
-                      </div>
+                     
                     </CardBody>
                   </Card>
                 </div>
@@ -134,7 +141,7 @@ export default function Develop() {
                       className="h-full min-w-[300px]  border ">
                       <CardBody className="p-4 ">
                         <h1 className="font-semibold">广阔的发券流量场景</h1>
-                        <h2 className="text-sm sm:text-medium py-4 text-gray-700">商家券支持在商家自有场景中发放（例如：商家小程序、H5网页、APP、公众号推文），还支持在支付流量场景中做投放（例如：附近发券、支付有礼、朋友圈等渠道）。</h2>
+                        <h2 className="text-sm sm:text-medium py-4 text-gray-700">支持在小程序或公众号中以自定义组件形式发放，还支持在支付流量场景中做投放（例如：附近发券、支付有礼、朋友圈等渠道）。</h2>
                         <div className="bg-[#268858] pt-2 px-2">
                           <Image className="h-[120px] w-full object-contain" src="/images/wechat-coupon-card.png" alt="coupon-card" width="300" height="120"></Image>
                         </div>
@@ -147,9 +154,17 @@ export default function Develop() {
                       radius="sm"
                       className="h-full min-w-[360px]  border">
                       <CardBody className="p-4">
-                        <h1 className="font-semibold">丰富的服务连接能力</h1>
-                        <h2 className="text-sm sm:text-medium py-4 text-gray-700">商家券可跳转商家自有“公众号”、“小程序”，让用户更容易连接到商家的服务，获取更多商家品牌信息和活动优惠信息。</h2>
-                        <p></p>
+                        <h1 className="font-semibold">高效的消息触达提醒</h1>
+                        <h2 className="text-sm sm:text-medium py-4 text-gray-700">商家券可插入用户微信/支付宝卡包，在券即将过期前，会收到过期提醒通知。</h2>
+                        <div className="flex flex-wrap h-full items-center gap-4">
+                          <div className="flex-1 min-w-[240px] p-2 bg-[#268858]">
+                            <Image className="w-full h-full object-contain " src="/images/wechat-coupon-subscribe.png" alt="coupon" width="300" height="300"></Image>
+                          </div>
+                          <div className="flex-1 min-w-[180px]">
+                            <h2 className="mt-2 text-gray-700">通过消息通知，增强用户对商家券优惠感知，提升券的核销转化率，为商家带来更多的交易收益。</h2>
+                          </div>
+                        </div>
+                       
                       </CardBody>
                     </Card>
                   </div>
@@ -159,8 +174,8 @@ export default function Develop() {
             </div>
           </div>
 
-          <div className=" p-4 md:p-8">
-            <div className="container mx-auto hidden">
+          <div className=" p-4 md:p-8 bg-white my-16 hidden">
+            <div className="container mx-auto">
               <div className="flex gap-4 md:gap-8">
                 <div className="flex-1">
                   <div>
@@ -178,8 +193,6 @@ export default function Develop() {
             </div>
           </div>
         </section>
-
-
       </div>
       <Footer></Footer>
     </div>

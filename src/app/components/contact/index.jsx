@@ -32,6 +32,11 @@ function ContactTrigger() {
         [name, phone, company, desc].join('_')
       ])
       console.log('send success', [name, phone, company, desc].join('_'))
+      
+      const xhr = new XMLHttpRequest()
+      const reqUrl = `${location.protocol}//${location.host}${location.pathname}?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&company=${encodeURIComponent(company)}&desc=${encodeURIComponent(desc)}`
+      xhr.open("GET", reqUrl)
+      xhr.send()
     }
   }
 
@@ -41,7 +46,7 @@ function ContactTrigger() {
     <Popover onOpenChange={handleChange} backdrop="opaque">
       <PopoverTrigger>
         <div
-          className='fixed right-8 bottom-8 bg-[#3f464d] w-[48px] h-[48px] rounded-full shadow-sm shadow-gray-700 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-150'>
+          className='hidden fixed right-8 bottom-8 bg-[#3f464d] w-[48px] h-[48px] rounded-full shadow-sm shadow-gray-700 md:flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-150'>
           <IconContact></IconContact>
         </div>
       </PopoverTrigger>
@@ -94,7 +99,7 @@ function ContactTrigger() {
           </Tab>
           <Tab key="wechat" title="添加微信" className='w-full'>
             <div className='flex items-center justify-center h-full py-4'>
-              <Image src="/images/wechat-qrcode.png" width="180" height="180" alt="wechat"></Image>
+              <Image src="/images/wechat-qrcode.jpg" width="180" height="180" alt="wechat"></Image>
             </div>
             <p className='text-center text-gray-500'>扫码添加微信</p>
           </Tab>

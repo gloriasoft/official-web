@@ -1,5 +1,5 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "@/app/components/header";
+import Footer from "@/app/components/footer";
 import Image from "next/image";
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-1">
-                <Image className="w-full" src="/images/siyu.png" alt="siyu" width="300" height="300"></Image>
+                {/* <Image className="w-full" src="/images/siyu.png" alt="siyu" width="300" height="300"></Image> */}
               </div>
             </div>
           </div>
